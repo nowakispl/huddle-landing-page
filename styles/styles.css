@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: repeat-x;
+    color: white;
+}
+
+/* Header */
+
+.logo__img {
+    margin: 1.8rem 2.187rem;
+    width: 7rem;
+}
+
+/* Main div */
+
+.main-div__center-align {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.6rem 2.187rem 2.2rem 2.187rem;
+    text-align: center;
+}
+
+/* Illustration */
+
+.illustration-mockups__img {
+    width: 100%;
+}
+
+/* Article */
+
+.article__heading {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.article__paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Button */
+
+.btn {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 11px -4px #000000;
+    box-shadow: 0px 0px 11px -4px #000000;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    margin-top: 1.6rem;
+    margin-bottom: 4.1rem;
+    padding: 10px 70px 10px 70px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: hsl(300, 69%, 71%);
+    color: white;
+
+}
+
+/* Footer */
+
+.icon__item {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    width: 34px;
+}
+
+.icon__item:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+.icon--round-border {
+    border: hsl(261, 37%, 89%) 1.5px solid;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1025px) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        margin: auto;
+        max-width: 1253px;
+    }
+
+    .logo__img {
+        position: relative;
+        top: 2.5rem;
+        width: 11rem;
+    }
+
+    .illustration-mockups {
+        flex: 1;
+    }
+
+    .main-div__center-align {
+        margin-top: 6.25rem;
+        text-align: left;
+    }
+
+    .article-button-div {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        max-width: 34rem;
+        padding-left: 3.125rem;
+    }
+
+    .article__heading {
+        font-size: 2.3rem;
+    }
+
+    .btn {
+        width: 8.75rem;
+        padding-right: 1.875rem;
+        padding-left: 1.875rem;
+    }
+
+    .icon {
+        align-self: flex-end;
+        text-align: center;
+    }
+
+    .icon-div {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1253px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-button-div {
+        max-width: 34rem;
+    }
+}
+
+@media screen and (min-width: 1312px) {
+    .logo__img {
+        margin-left: 0;
+    }
+}
